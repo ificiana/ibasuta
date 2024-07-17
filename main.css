@@ -1,0 +1,120 @@
+/* Reset default margin, padding, and overflow for html and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Main Container */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    overflow-x: hidden;
+    padding: 2%;
+}
+
+/* Dropdowns */
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+/* Video List */
+#videos {
+    max-height: 100%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Container for the video */
+#video {
+    flex-grow: 1;
+    max-height: 100%;
+}
+
+.vd-embed {
+    height: 100%;
+    width: 100%;
+}
+
+/* Individual video item */
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    flex: 0 0 120px;
+    margin-right: 10px;
+    max-width: 25%;
+}
+
+.video-title {
+    flex: 1;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.video-item:hover {
+    background-color: #f0f0f0;
+}
+
+.video-item.active {
+    background-color: #a7a1a1;
+}
+
+/* Positioning the icon-links div at the top right corner */
+.icon-links {
+    position: absolute;
+    top: 8%; /* Adjust as needed for vertical positioning */
+    right: 2%; /* Adjust as needed for horizontal positioning */
+}
+
+/* Styling the links */
+.icon-links a {
+    margin-left: 10px; /* Add some space between the icons */
+    text-decoration: none;
+    color: #fff; /* Change the color as needed */
+}
+
+/* Styling the icons (assuming they are square images) */
+.icon-links img {
+    width: 30px; /* Adjust the size of the icons as needed */
+    height: 30px; /* Adjust the size of the icons as needed */
+}

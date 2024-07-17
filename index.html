@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いばスタ：国語</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="database.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>いばスタ：国語</h1>
+        <b>再生リストを選ぶ：</b>
+        <select title="publication" id="publication">
+            <option value="mitsumura">光村図書</option>
+            <option value="tokyo">東京書籍</option>
+        </select>
+        <select title="grade" id="grade">
+            <option value="1">小学校～１年</option>
+            <option value="2">小学校～２年</option>
+            <option value="3">小学校～３年</option>
+            <option value="4">小学校～４年</option>
+            <option value="5">小学校～５年</option>
+            <option value="6">小学校～６年</option>
+            <option value="7">中学校～１年</option>
+            <option value="8">中学校～２年</option>
+            <option value="9">中学校～３年</option>
+        </select>
+        <select title="mode" id="mode">
+            <option value="youtube">ユーチューブ</option>
+            <option value="local">ロカール</option>
+        </select>
+    </header>
+    <main class="main">
+        <div id="videos"></div>
+        <div id="video"></div>
+    </main>
+    <div class="icon-links">
+        <a href="https://sites.google.com/view/ibastudye/%E3%83%9B%E3%83%BC%E3%83%A0" target="_blank" rel="noopener">
+            <i class="fas fa-info-circle"></i> Learn More
+        </a>
+        <a href="https://github.com/ificiana/ibasuta" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
